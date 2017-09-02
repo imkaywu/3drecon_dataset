@@ -1,4 +1,3 @@
-# My blog
+## 3DRecon Dataset
 
-This is my blog, uses [Jekyll](http://jekyllrb.com/). I was tired of bloated, slow Wordpress that locked up all my content.
-
+This is the dataset created for my Master's thesis: Development and Evaluation of 3D Reconstruction Framework for General Objects.
