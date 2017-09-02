@@ -14,12 +14,23 @@ We generated both real-world and synthetic data sets
 
 
 ## Setups
-<div class="imgmul3">
-<img src="assets/setup/mvs_setup.jpg" style="border:none;">
-<img src="assets/setup/ps_setup.jpg" style="border:none;">
-<img src="assets/setup/sl_setup.jpg" style="border:none;">
-<div class="thecap">Setup of multi-view stereo algorithms.</div>
+<div class="container">
+	<div class="imgmul3">
+	<img src="assets/setup/mvs_setup.jpg" style="border:none;">
+	<h6>Multi-view stereo setup.</h6>
+	</div>
+
+	<div class="imgmul3">
+	<img src="assets/setup/ps_setup.jpg" style="border:none;">
+	<h6>Photometric stereo setup.</h6>
+	</div>
+
+	<div class="imgmul3">
+	<img src="assets/setup/sl_setup.jpg" style="border:none;">
+	<h6>Structured light setup.</h6>
+	</div>
 </div>
+
 
 ## Real-world dataset
 <div class="imgcap">
