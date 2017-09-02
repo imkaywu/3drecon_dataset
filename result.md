@@ -5,6 +5,28 @@ permalink: /result/
 ---
 
 ## Real-world dataset
+<div class="container">
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/result/box/box_mvs.png" style="border:none;">
+	<h6>Multi-view stereo</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/result/box/box_ps.png" style="border:none;">
+	<h6>Photometric stereo</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/result/box/box_sl.png" style="border:none;">
+	<h6>Structured light</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/result/box/box_sc.png" style="border:none;">
+	<h6>Visual Hull</h6>
+	</div>
+</div>
+
 <div class="imgmul4">
 <img src="{{site.url}}{{site.baseurl}}/assets/result/box/box_mvs.png" style="border:none;">
 <img src="{{site.url}}{{site.baseurl}}/assets/result/box/box_ps.png" style="border:none;">
