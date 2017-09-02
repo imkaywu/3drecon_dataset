@@ -8,7 +8,7 @@ permalink: /dataset/
 
 The real-world dataset provided here is for non-commercial research/educational use only.
 
-[Download synthetic projects]()
+[Download synthetic projects](https://github.com/imkaywu/blender_scripts)
 
 We provide the Blender projects and scripts that are used to generate the synthetic datasets.
 

@@ -271,6 +271,31 @@ a:visited { color: #205caa; }
   font-size: 14px;
   text-align: center;
 }
+.imgmul3 img {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    max-width: 30%;
+}
+.imgmul3 {
+  -webkit-column-width: 30%; /* Chrome, Safari, Opera */
+  -moz-column-width: 30% /* Firefox */
+  column-width: 30%;
+  padding:  2% 2% 10px 2%;
+}
+
+.imgmul4 img {
+    -webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+    column-count: 4;
+    max-width: 22%;
+}
+.imgmul4 {
+  -webkit-column-width: 22%; /* Chrome, Safari, Opera */
+  -moz-column-width: 22% /* Firefox */
+  column-width: 22%;
+  padding:  2% 2% 10px 2%;
+}
 
 .svgdiv {
   width: 100%;

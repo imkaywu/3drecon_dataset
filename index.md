@@ -14,26 +14,39 @@ We generated both real-world and synthetic data sets
 
 
 ## Setups
-<div class="imgcap">
+<div class="imgmul3">
 <img src="assets/setup/mvs_setup.jpg" style="border:none;">
-<div class="thecap">Setup of multi-view stereo algorithms.</div>
-</div>
-
-<div class="imgcap">
 <img src="assets/setup/ps_setup.jpg" style="border:none;">
-<div class="thecap">Setup of photometric stereo algorithms.</div>
-</div>
-
-<div class="imgcap">
 <img src="assets/setup/sl_setup.jpg" style="border:none;">
-<div class="thecap">Setup of structured light algorithms.</div>
+<div class="thecap">Setup of multi-view stereo algorithms.</div>
 </div>
 
 ## Real-world dataset
 <div class="imgcap">
-<img src="assets/real_world_dataset.png" style="border:none;">
+<img src="assets/dataset_overview/real_world_dataset.png" style="border:none;">
 <div class="thecap">Images of real-world objects</div>
 </div>
 
 
 ## Synthetic dataset
+<div class="imgmul3">
+<img src="assets/dataset_overview/bottle_mvs.jpg" style="border:none;">
+<img src="assets/dataset_overview/bottle_ps.jpg" style="border:none;">
+<img src="assets/dataset_overview/bottle_sl.jpg" style="border:none;">
+<div class="thecap">Synthetic object 1: bottle</div>
+</div>
+
+<div class="imgmul3">
+<img src="assets/dataset_overview/knight_mvs.jpg" style="border:none;">
+<img src="assets/dataset_overview/knight_ps.jpg" style="border:none;">
+<img src="assets/dataset_overview/knight_sl.jpg" style="border:none;">
+<div class="thecap">Synthetic object 2: knight</div>
+</div>
+
+<div class="imgmul3">
+<img src="assets/dataset_overview/king_mvs.jpg" style="border:none;">
+<img src="assets/dataset_overview/king_ps.jpg" style="border:none;">
+<img src="assets/dataset_overview/king_sl.jpg" style="border:none;">
+<div class="thecap">Synthetic object 3: king</div>
+</div>
+
