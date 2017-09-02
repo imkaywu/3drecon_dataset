@@ -2,7 +2,7 @@
 title: 3DRecon Dataset
 email: 
 # description: "Musings of a Computer Scientist."
-baseurl: "https://imkaywu.github.io/3drecon_dataset"
+baseurl: "/3drecon_dataset"
 url: "https://imkaywu.github.io"
 # twitter_username: karpathy
 github_username:  imkaywu
