@@ -5,7 +5,7 @@ email:
 baseurl: "/3drecon_dataset"
 url: "https://imkaywu.github.io"
 # twitter_username: karpathy
-github_username:  imkaywu
+# github_username:  imkaywu
 
 # Build settings
 markdown: kramdown
