@@ -31,7 +31,6 @@ We generated both real-world and synthetic data sets
 	</div>
 </div>
 
-
 ## Real-world dataset
 <div class="imgcap">
 <img src="assets/dataset_overview/real_world_dataset.png" style="border:none;">
@@ -40,24 +39,47 @@ We generated both real-world and synthetic data sets
 
 
 ## Synthetic dataset
-<div class="imgmul3">
-<img src="assets/dataset_overview/bottle_mvs.jpg" style="border:none;">
-<img src="assets/dataset_overview/bottle_ps.jpg" style="border:none;">
-<img src="assets/dataset_overview/bottle_sl.jpg" style="border:none;">
-<div class="thecap">Synthetic object 1: bottle</div>
+<div class="container">
+	<div class="imgmul3">
+	<img src="assets/dataset_overview/bottle_mvs.jpg" style="border:none;">
+	</div>
+
+	<div class="imgmul3">
+	<img src="assets/dataset_overview/bottle_ps.jpg" style="border:none;">
+	<h6>Synthetic object 1: bottle</h6>
+	</div>
+
+	<div class="imgmul3">
+	<img src="assets/dataset_overview/bottle_sl.jpg" style="border:none;">
+	</div>
 </div>
 
-<div class="imgmul3">
-<img src="assets/dataset_overview/knight_mvs.jpg" style="border:none;">
-<img src="assets/dataset_overview/knight_ps.jpg" style="border:none;">
-<img src="assets/dataset_overview/knight_sl.jpg" style="border:none;">
-<div class="thecap">Synthetic object 2: knight</div>
+<div class="container">
+	<div class="imgmul3">
+	<img src="assets/dataset_overview/knight_mvs.jpg" style="border:none;">
+	</div>
+
+	<div class="imgmul3">
+	<img src="assets/dataset_overview/knight_ps.jpg" style="border:none;">
+	<h6>Synthetic object 2: knight</h6>
+	</div>
+
+	<div class="imgmul3">
+	<img src="assets/dataset_overview/knight_sl.jpg" style="border:none;">
+	</div>
 </div>
 
-<div class="imgmul3">
-<img src="assets/dataset_overview/king_mvs.jpg" style="border:none;">
-<img src="assets/dataset_overview/king_ps.jpg" style="border:none;">
-<img src="assets/dataset_overview/king_sl.jpg" style="border:none;">
-<div class="thecap">Synthetic object 3: king</div>
-</div>
+<div class="container">
+	<div class="imgmul3">
+	<img src="assets/dataset_overview/king_mvs.jpg" style="border:none;">
+	</div>
 
+	<div class="imgmul3">
+	<img src="assets/dataset_overview/king_ps.jpg" style="border:none;">
+	<h6>Synthetic object 3: king</h6>
+	</div>
+
+	<div class="imgmul3">
+	<img src="assets/dataset_overview/king_sl.jpg" style="border:none;">
+	</div>
+</div>

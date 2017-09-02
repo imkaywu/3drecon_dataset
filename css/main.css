@@ -274,7 +274,7 @@ a:visited { color: #205caa; }
 
 .container {
   width: 100%;
-  margin: 30px auto;
+  margin: 10px auto;
   overflow: hidden;
 }
 .imgmul3 img {
@@ -286,8 +286,8 @@ a:visited { color: #205caa; }
 }
 .imgmul3 {
   float: left;
-  width: 28%;
-  margin: 2%;
+  width: 30%;
+  margin: 1%;
 }
 .imgmul4 img {
   max-width: 100%;
@@ -298,8 +298,8 @@ a:visited { color: #205caa; }
 }
 .imgmul4 {
   float: left;
-  width: 20%;
-  margin: 2%;
+  width: 23%;
+  margin: 1%;
 }
 
 .svgdiv {
