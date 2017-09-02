@@ -8,3 +8,6 @@ permalink: /people/
 * Prof. Sidney Fels (University of British Columbia)
 * Dr. Gregor Miller (University of British Columbia)
 * Qian Zhou (University of British Columbia)
+
+## Questions or Suggestions
+Please contact [Kai Wu](mailto:kaywu@ece.ubc.ca)
