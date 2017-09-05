@@ -45,7 +45,7 @@ We provide the Blender projects and scripts that are used to generate the synthe
 ### Generation of datasets
 
 #### Pairwise
-First, we need to evaluate the pairwise relation between any two properties and the effect on algorithms. Therefore, the **first** synthetic dataset consists of **six** sub-groups.
+First, we need to find the effective properties for each algorithm to reduce the dimension of problem space. A reasonable approach is to evaluate the performance of the algorthm under **one** changing property. However, this might not successful, an intuitive example is: the impact of roughness is insignificant when surface is purely diffuse. We can only discover the effct of roughness when the surface reflectance (specularity) is changing at the same time. Thus, we need to evaluate the pairwise relation between any two properties and their effect on the algorithm. Therefore, the **first** synthetic dataset consists of **six** sub-groups.
 
 ```
 .

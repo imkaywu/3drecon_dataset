@@ -43,7 +43,7 @@ The structure of the toolbox is as follows
 |           └── analysis.m
 |       └── train
 |           ├── train.m
-|           └── analysis2.m
+|           └── analysis1.m
 |       └── test
 |           ├── test.m
 |           └── analysis.m
