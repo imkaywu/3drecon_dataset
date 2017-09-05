@@ -70,21 +70,27 @@ To validate that the mapping derived using the training dataset can be successfu
 
 We select three objects with increasing degree of concavity: bottle, knight, and king. The image examples are as follows:
 
+
+#### Bottle
+The first test object is a bottle, which has shallow indentations on the surface, *i.e.,* low level concavity. The first column presents the results of the mapping, and the algorithms that produce acceptable results are labeled in the green box. All quantitative and qualitative results align with those of the mapping, so we claim that the mapping is successfully applied to a surface with low concavity.
 <div class="imgcap">
 <img src="{{site.url}}/{{site.baseurl}}/assets/synth_results/bottle.pdf" style="border:none;">
 <div class="thecap">Results of bottle</div>
 </div>
 
+#### Knight
+The second object is a knight chess piece, which has medium concavity. In this case, we can see that the results of PMVS and GSL are still consistent with the mapping. However, the EPS fails to return reliable reconstruction in cases of high specular, such as (b) and (d), which is manifested by an increase in the variation of the angular error, represented by standard variation and the interquartile range. Thus, we claim that the mapping is still valid for PMVS, GSL and for EPS in low specular cases.
 <div class="imgcap">
 <img src="{{site.url}}/{{site.baseurl}}/assets/synth_results/knight.pdf" style="border:none;">
 <div class="thecap">Results of knight</div>
 </div>
 
+#### King
+The last synthetic object is the king chess piece, which has the largest concavity. In the case of high concavity, quantitative results of PMVS and GSL are still consistent with that of the mapping. However, the results of the EPS become inconsistent, which is a result of the cast shadow from the large concavity. Though the result of EPS under conditions (a) and (c) are still better than that of the baseline, the median angular error is above the acceptable threshold, which is $$10^\circ$$ in most cases. We can see with more clarity from the normal maps that the cast shadow on the "cross" leads to completely inaccurate normal estimation, which is labeled by a red rectangle.
 <div class="imgcap">
 <img src="{{site.url}}/{{site.baseurl}}/assets/synth_results/king.pdf" style="border:none;">
 <div class="thecap">Results of king</div>
 </div>
-
 
 ## Real-world dataset
 See the `recon` page for more results.
