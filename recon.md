@@ -10,6 +10,139 @@ This page is dedicated to displaying the reconstruction results.
 ## Sample video (pot)
 <iframe width="720" height="360" src="https://www.youtube.com/embed/4YgkcXeKovQ" frameborder="0" allowfullscreen></iframe>
 
+## Synthetic dataset
+<div class="container">
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/barrel_mvs.png" style="border:none;">
+	<h6>Multi-view stereo</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/barrel_ps.png" style="border:none;">
+	<h6>Photometric stereo</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/barrel_sl.png" style="border:none;">
+	<h6>Structured light</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/barrel_vh.png" style="border:none;">
+	<h6>Visual Hull</h6>
+	</div>
+</div>
+
+<div class="container">
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/vase2_mvs.png" style="border:none;">
+	<h6>Multi-view stereo</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/vase2_ps.png" style="border:none;">
+	<h6>Photometric stereo</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/vase2_sl.png" style="border:none;">
+	<h6>Structured light</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/vase2_vh.png" style="border:none;">
+	<h6>Visual Hull</h6>
+	</div>
+</div>
+
+<div class="container">
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/beethoven_mvs.png" style="border:none;">
+	<h6>Multi-view stereo</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/beethoven_ps.png" style="border:none;">
+	<h6>Photometric stereo</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/beethoven_sl.png" style="border:none;">
+	<h6>Structured light</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/beethoven_vh.png" style="border:none;">
+	<h6>Visual Hull</h6>
+	</div>
+</div>
+
+<div class="container">
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/vase0_mvs.png" style="border:none;">
+	<h6>Multi-view stereo</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/vase0_ps.png" style="border:none;">
+	<h6>Photometric stereo</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/vase0_sl.png" style="border:none;">
+	<h6>Structured light</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/vase0_vh.png" style="border:none;">
+	<h6>Visual Hull</h6>
+	</div>
+</div>
+
+<div class="container">
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/budda_mvs.png" style="border:none;">
+	<h6>Multi-view stereo</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/budda_ps.png" style="border:none;">
+	<h6>Photometric stereo</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/budda_sl.png" style="border:none;">
+	<h6>Structured light</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/budda_vh.png" style="border:none;">
+	<h6>Visual Hull</h6>
+	</div>
+</div>
+
+<div class="container">
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/vase1_mvs.png" style="border:none;">
+	<h6>Multi-view stereo</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/vase1_ps.png" style="border:none;">
+	<h6>Photometric stereo</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/vase1_sl.png" style="border:none;">
+	<h6>Structured light</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/vase1_vh.png" style="border:none;">
+	<h6>Visual Hull</h6>
+	</div>
+</div>
+
 ## Real-world dataset
 <div class="container">
 	<div class="imgmul4">
@@ -205,139 +338,6 @@ This page is dedicated to displaying the reconstruction results.
 
 	<div class="imgmul4">
 	<img src="{{site.url}}{{site.baseurl}}/assets/recon/vase/vase_sc.png" style="border:none;">
-	<h6>Visual Hull</h6>
-	</div>
-</div>
-
-## Synthetic dataset
-<div class="container">
-	<div class="imgmul4">
-	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/barrel_mvs.png" style="border:none;">
-	<h6>Multi-view stereo</h6>
-	</div>
-
-	<div class="imgmul4">
-	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/barrel_ps.png" style="border:none;">
-	<h6>Photometric stereo</h6>
-	</div>
-
-	<div class="imgmul4">
-	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/barrel_sl.png" style="border:none;">
-	<h6>Structured light</h6>
-	</div>
-
-	<div class="imgmul4">
-	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/barrel_vh.png" style="border:none;">
-	<h6>Visual Hull</h6>
-	</div>
-</div>
-
-<div class="container">
-	<div class="imgmul4">
-	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/vase2_mvs.png" style="border:none;">
-	<h6>Multi-view stereo</h6>
-	</div>
-
-	<div class="imgmul4">
-	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/vase2_ps.png" style="border:none;">
-	<h6>Photometric stereo</h6>
-	</div>
-
-	<div class="imgmul4">
-	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/vase2_sl.png" style="border:none;">
-	<h6>Structured light</h6>
-	</div>
-
-	<div class="imgmul4">
-	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/vase2_vh.png" style="border:none;">
-	<h6>Visual Hull</h6>
-	</div>
-</div>
-
-<div class="container">
-	<div class="imgmul4">
-	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/beethoven_mvs.png" style="border:none;">
-	<h6>Multi-view stereo</h6>
-	</div>
-
-	<div class="imgmul4">
-	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/beethoven_ps.png" style="border:none;">
-	<h6>Photometric stereo</h6>
-	</div>
-
-	<div class="imgmul4">
-	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/beethoven_sl.png" style="border:none;">
-	<h6>Structured light</h6>
-	</div>
-
-	<div class="imgmul4">
-	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/beethoven_vh.png" style="border:none;">
-	<h6>Visual Hull</h6>
-	</div>
-</div>
-
-<div class="container">
-	<div class="imgmul4">
-	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/vase0_mvs.png" style="border:none;">
-	<h6>Multi-view stereo</h6>
-	</div>
-
-	<div class="imgmul4">
-	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/vase0_ps.png" style="border:none;">
-	<h6>Photometric stereo</h6>
-	</div>
-
-	<div class="imgmul4">
-	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/vase0_sl.png" style="border:none;">
-	<h6>Structured light</h6>
-	</div>
-
-	<div class="imgmul4">
-	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/vase0_vh.png" style="border:none;">
-	<h6>Visual Hull</h6>
-	</div>
-</div>
-
-<div class="container">
-	<div class="imgmul4">
-	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/budda_mvs.png" style="border:none;">
-	<h6>Multi-view stereo</h6>
-	</div>
-
-	<div class="imgmul4">
-	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/budda_ps.png" style="border:none;">
-	<h6>Photometric stereo</h6>
-	</div>
-
-	<div class="imgmul4">
-	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/budda_sl.png" style="border:none;">
-	<h6>Structured light</h6>
-	</div>
-
-	<div class="imgmul4">
-	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/budda_vh.png" style="border:none;">
-	<h6>Visual Hull</h6>
-	</div>
-</div>
-
-<div class="container">
-	<div class="imgmul4">
-	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/vase1_mvs.png" style="border:none;">
-	<h6>Multi-view stereo</h6>
-	</div>
-
-	<div class="imgmul4">
-	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/vase1_ps.png" style="border:none;">
-	<h6>Photometric stereo</h6>
-	</div>
-
-	<div class="imgmul4">
-	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/vase1_sl.png" style="border:none;">
-	<h6>Structured light</h6>
-	</div>
-
-	<div class="imgmul4">
-	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/vase1_vh.png" style="border:none;">
 	<h6>Visual Hull</h6>
 	</div>
 </div>
