@@ -253,3 +253,47 @@ This page is dedicated to displaying the reconstruction results.
 	<h6>Visual Hull</h6>
 	</div>
 </div>
+
+<div class="container">
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/beethoven_mvs.png" style="border:none;">
+	<h6>Multi-view stereo</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/beethoven_ps.png" style="border:none;">
+	<h6>Photometric stereo</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/beethoven_sl.png" style="border:none;">
+	<h6>Structured light</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/beethoven_vh.png" style="border:none;">
+	<h6>Visual Hull</h6>
+	</div>
+</div>
+
+<div class="container">
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/budda_mvs.png" style="border:none;">
+	<h6>Multi-view stereo</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/budda_ps.png" style="border:none;">
+	<h6>Photometric stereo</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/budda_sl.png" style="border:none;">
+	<h6>Structured light</h6>
+	</div>
+
+	<div class="imgmul4">
+	<img src="{{site.url}}{{site.baseurl}}/assets/recon/synth/budda_vh.png" style="border:none;">
+	<h6>Visual Hull</h6>
+	</div>
+</div>
