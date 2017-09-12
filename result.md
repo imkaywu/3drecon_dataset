@@ -22,16 +22,16 @@ We generate a dataset of four objects, see `Dataset` and `Recon` page. The mappi
 </div>
 
 ### synthetic object 1: barrel
-[TBD]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wzn_Hw_oPZA" frameborder="0" allowfullscreen></iframe>
 
 ### synthetic object 2: vase0
-[TBD]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zCwJd0TduJs" frameborder="0" allowfullscreen></iframe>
 
 ### synthetic object 3: bust
-[TBD]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/x4PkbVp4fiM" frameborder="0" allowfullscreen></iframe>
 
 ### synthetic object 4: vase1
-[TBD]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XBS8eKUiWIo" frameborder="0" allowfullscreen></iframe>
 
 
 ## Real-world dataset
