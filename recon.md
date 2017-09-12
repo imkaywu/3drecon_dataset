@@ -7,9 +7,6 @@ permalink: /recon/
 ## Overview
 This page is dedicated to displaying the reconstruction results.
 
-## Sample video (pot)
-<iframe width="720" height="360" src="https://www.youtube.com/embed/4YgkcXeKovQ" frameborder="0" allowfullscreen></iframe>
-
 ## Synthetic dataset
 <div class="container">
 	<div class="imgmul4">
