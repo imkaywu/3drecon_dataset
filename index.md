@@ -16,7 +16,10 @@ There are two limitations to current existing 3D datasets or benchmarks
 1. they target one specific class of algorithms;
 2. they use objects with fixed geometric or material properties.
 
-We generated both real-world and synthetic datasets. The synthetic dataset is used to evaluate the performance of each algorithm under a variety of problem conditions. The real-world dataset is used to validate the robustness of the framework.
+We generated both real-world and synthetic datasets. The synthetic dataset is used to evaluate the performance of each algorithm under a variety of problem conditions. The real-world dataset is used to validate the robustness of the framework. More specifically:
+
+* a real-world dataset with 11 objects captured for Multi-view Stereo, Photometric Stereo, and Structured Light techniques.
+* multiple blender projects used to generate synthetic datasets with varied material and geometric properties
 
 ## Setups
 <div class="container">
