@@ -1,62 +1,107 @@
 ---
 layout: page
-title: Dataset
-permalink: /dataset/
+title: Documentation
+permalink: /document/
+mathjax: true
 ---
 ## Table of content
-* [Real-world dataset](#real_world_dataset)
-	* [Overview](#real_world_overview)
-	* [Structure of MVS datasets](#struct_mvs)
-	* [Structure of PS datasets](#struct_ps)
-	* [Structure of SL datasets](#struct_sl)
+* [Overview of real-world dataset](#real_world_overview)
+* [Real-world MVS data](#real_mvs_data)
+	* [Setup](#real_mvs_setup)
+	* [Calibration](#real_mvs_calib)
+	* [Image formats](#real_mvs_format)
+* [Real-world PS data](#real_pss_data)
+	* [Setup](#real_ps_setup)
+	* [Calibration](#real_ps_calib)
+	* [Image formats](#real_ps_format)
+* [Real-world SL data](#real_sl_data)
+	* [Setup](#real_sl_setup)
+	* [Calibration](#real_sl_calib)
+	* [Image formats](#real_sl_format)
+* [Real-world VH data]()
+* [Synthetic MVS data]()
+* [Synthetic PS data]()
+* [Synthetic SL data]()
 * [Synthetic dataset](#synth_dataset)
 	* [Structure of datasets](#struct_synth)
 	* [Effects of properties](#prop_effect)
 	* [Generate synthetic datasets](#gen_synth_dataset)
+* [Evaluation](#eval)
 * [Downloads](#download)
 
-## Real-world dataset <a name="real_world_dataset"></a>
-
-### Overview of real-world objects <a name="real_world_overview"></a>
+## Overview of real-world objects <a name="real_world_overview"></a>
 <div class="imgcap">
 <img src="{{site.url}}/{{site.baseurl}}/assets/dataset/real_world_dataset.png" style="border:none;">
 <div class="thecap">Images of real-world objects</div>
 </div>
 
-### Structure of MVS datasets <a name="struct_mvs"></a>
+## Real-world MVS data <a name="real_mvs_data"></a>
 The directory structure and naming convention are the same as those of [PMVS](https://www.di.ens.fr/pmvs/documentation.html). The directory structure is as follows:
 ```
 .
 ├── model
 ├── txt
 ├── visualize
-├── option.txt
+└── option.txt
 ```
-* The `model` directory contains the reconstructed model.
-* the `txt` directory contains the camera calibration results. The files must be named as `00000000.txt`, `00000001.txt`, and so on. The format of the camera parameter also follows that of PMVS, which is 
+
+### Setup <a name="real_mvs_setup"></a>
+For MVS, we capture the dataset by positioning the camera in three different heights. The objects are about 30-50cm away from the camera, and stays fixed on a turntable. We have followed the following two steps to acquire data: 1) put the camera at a different height, adjust the orientation so that the object in at the center of the frame; 2) take pictures while rotating the table. The table rotates approximately 30  every time. We rotate it 12 times and in total, we can obtain 12 image per height.
+
+### Image format <a name="real_mvs_format"></a>
+Images are captured by Nikon D70S camera in the `jpeg` format. The naming convension of images follows that of PMVS developed by Furukawa. For instance, the images are named as `00000000.xxx`, `00000001.xxx`, and so on. The images are stored in the `visualize` directory.
+
+### Calibratoin <a name="real_mvs_calib"></a>
+For MVS, a calibration pattern proposed in Bo Li is imaged under the object, which is used for calibrating the camera position and orientation by Structure from Motion softwares, such as VisualSfM. The focal length is known a priori and remains fixed duing the image capturing process. Thus the extrinsic parameters of the camera can be retrieved up to a similarity transformation, and the reconstruction result is a metric/euclidean recontruction.
+
+The `txt` directory contains the camera calibration results. The files must be named as `00000000.txt`, `00000001.txt`, and so on. The format of the camera parameter also follows that of PMVS, which is
 ```
 CONTOUR
 P[0][0] P[0][1] P[0][2] P[0][3]
 P[1][0] P[1][1] P[1][2] P[1][3]
 P[2][0] P[2][1] P[2][2] P[2][3]
 ```
-* the `visualize` directory contains the captured images, The images are named as `00000000.jpg`, `00000001.jpg`, and so on.
 
-### Structure of PS datasets <a name="struct_ps"></a>
-The directory structure of PS datasets are as follows
+## Real-world PS data <a name="real_ps_data"></a>
+The directory structure of PS dataset is as follows
 ```
 .
-├── file.txt
-├── mask
-|   ├── mask_tar.png
-|   ├── mask_ref_diff.png
-|   ├── mask_ref_spec.png
-|   └── mask.txt
-├── tar_obj
 ├── ref_obj
+|   └── 0000
+|       ├── 000000xx.jpg
+|       └── mask.bmp
+|   └── 0001
+|       ├── 000000xx.jpg
+|       └── mask.bmp
+├── 000000xx.jpg
+├── mask.bmp
 └── nomral.png
 ```
-* `file.txt` contains the names of all the images in the directory, including names of target, reference, and mask images. The structure of this file is as follows
+
+### Setup <a name="real_ps_setup"></a>
+For PS, a 70-200mm lens, a handheld lamp, and two reference objects (dif- fuse and glossy) are used. The objects are positioned about 3m from the camera to approximate orthographic projection. To avoid inter-reflection, all data are cap- tured in a dark room with everying covered by black cloth except the target object. We use a hand-held lamp as the light source and choose close to frontal viewpoints to avoid severe self-shadowing effect. We take 20 images per object and select 15 plus images depending on the severity of the self-shadow effect.
+
+### Image format <a name="real_ps_format"></a>
+
+
+
+### Calibration <a name="real_ps_calib"></a>
+For most PS algorithms, i.e., calibrated PS algorithms, it is necessary to esti- mate the light direction and intensity. However, the selected PS algorithm can deal Appearance with unknown light sources and spatially-varying BRDFs. Thus, light calibration is not a required step. Though it is preferable to correct the non-linear response of camera, Hertzmann and Seitz discovered that it was unnecessary for EPS. Thus, we did not perform the radiometric calibration step. No geometric calibration of the camera is needed.
+
+## Real-world SL data <a name="real_sl_data"></a>
+
+### Setup
+For SL, we use a Sanyo Pro xtraX Multiverse projector with a resolution of $$1024\times 768$$. The baseline angle of the camera projector pair is approximately 10  . To alleviate the effect of ambient light, all images are captured with room lights off. To counteract the effect of inter-reflection, additional images are captured by projecting an all-white and all-black patterns.
+
+The Structure Light datasets contain images captured under the projection of column and row patterns. For each projection pattern, the reverse pattern is projected as well to eliminate the effects of global light transport. The resolution of the projector is 1024*768, thus, 10 temporally encoded patterns are needed. Two images with light on and off are captured to help the decoding process. Thus, the total number of images are 2*2*10+2=42.
+
+### Image formats
+
+### Calibration
+For SL, a opensource camera-projector calibration software developed by Moreno and Taubin is used for calibration. This technique works by projecting temporal patterns onto the calibration pattern, and uses local homography to individually translate each checkerboard corner from the camera plane to the projector plane. This technique can estimate both the intrinsic parameter and camera and projector, and the relative position and orientation.
+
+
+<!-- * `file.txt` contains the names of all the images in the directory, including names of target, reference, and mask images. The structure of this file is as follows
 ```
 [num_of_imgs] [num_of_ref_objects]
 [names of ref_1 under various lighting]
@@ -70,10 +115,7 @@ The directory structure of PS datasets are as follows
 * `mask` contains mask images, and `mask.txt` file, which gives information regarding the size of the mask images, and center and radius of the imaged reference objects.
 * `tar_obj` contains images of the target objects.
 * `ref_obj` contains images of the reference objects.
-* `normal.png` is the estimated normal map.
-
-### Structure of SL datasets <a name="struct_sl"></a>
-The Structure Light datasets contain images captured under the projection of column and row patterns. For each projection pattern, the reverse pattern is projected as well to eliminate the effects of global light transport. The resolution of the projector is 1024*768, thus, 10 temporally encoded patterns are needed. Two images with light on and off are captured to help the decoding process. Thus, the total number of images are 2*2*10+2=42.
+* `normal.png` is  -->the estimated normal map.
 
 ## Synthetic dataset <a name="synth_dataset"></a>
 
@@ -201,6 +243,14 @@ We select three objects with increasing degree of concavity: bottle, knight, and
 	<img src="{{site.url}}/{{site.baseurl}}/assets/dataset/king_sl.jpg" style="border:none;">
 	</div>
 </div>
+
+## Evaluation <a name="eval"></a>
+There are three metrics used
+* accuracy
+* completeness
+* angular error
+
+The `analysis.m` script in the corresponding directory can generate the final plot. Please to the `result` page for the plots of the results.
 
 ## Downloads <a name="download"></a>
 [Download real-world dataset]()

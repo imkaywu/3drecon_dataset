@@ -1,11 +1,12 @@
 ---
 layout: page
+title: Introduction
 mathjax: true
 comments: false
 exclude_from_nav: true
 ---
 
-## Introduction
+## Intro
 The past few decades have witnessed many successful 3D reconstruction technique being developed. However, there are mainly two challenges that prevent the wide adoption of these techniques. First, most vision techniques, 3D reconstruction techniques included, only work for a specific category of objects or under a specific problem condition. Second, the working conditions of each class of algorithms are largely known, or only known empirically, without a well defined problem condition.
 
 ## Goal
@@ -22,19 +23,3 @@ We generated both real-world and synthetic datasets. The synthetic dataset is us
 * multiple blender projects used to generate synthetic datasets with varied material and geometric properties
 
 ## Setups
-<div class="container">
-	<div class="imgmul3">
-	<img src="{{site.url}}/{{site.baseurl}}/assets/setup/mvs_setup.jpg" style="border:none;">
-	<h6>Multi-view stereo setup.</h6>
-	</div>
-
-	<div class="imgmul3">
-	<img src="{{site.url}}/{{site.baseurl}}/assets/setup/ps_setup.jpg" style="border:none;">
-	<h6>Photometric stereo setup.</h6>
-	</div>
-
-	<div class="imgmul3">
-	<img src="{{site.url}}/{{site.baseurl}}/assets/setup/sl_setup.jpg" style="border:none;">
-	<h6>Structured light setup.</h6>
-	</div>
-</div>

@@ -4,9 +4,16 @@ title: Software
 permalink: /software/
 ---
 
-In this section, we will give detailed introduction of our software that is used to run and evaluate all the implemented algorithms. The source code is available [here](https://github.com/imkaywu/3DRecon_Algo_Eval).
+## Table of content
+* [Structure of source code](#structure)
+* [Algorithms](#algorithms)
+* [Calibration results](#calibration)
+* [Datasets](#datasets)
+* [Execution & evaluation pipeline](#run_eval)
 
-## Structure
+In this section, we will give detailed introduction of our software that is used to run and evaluate all the implemented algorithms. The source code is available [here](https://github.com/imkaywu/3DReconKit).
+
+## Structure of source code <a name="structure"></a>
 The structure of the toolbox is as follows
 
 ```
@@ -17,9 +24,15 @@ The structure of the toolbox is as follows
 |           └── bin_x64
 |   └── PS
 |   	├── EPS
-|       └── PSBox
+|       └── LLS-PS
 |   ├── SL
 |   └── VH
+├── calib
+|   └── result
+|       ├── real
+|       └── synth
+|   ├── include
+|   └── src
 ├── data
 |   └── real
 |       └── cup
@@ -28,51 +41,47 @@ The structure of the toolbox is as follows
 |           ├── sl
 |           └── vh
 |   └── synth
-|       ├── sphere
-|       ├── bottle
-|       └── ref_obj
+|       ├── eval_prop
+|       ├── eval_algo
+|       └── eval_interp
 ├── eval
 |   ├── include
 |   ├── io
 |   └── real_world
-|       ├── run.m
-|       └── vis.m
+|       └── run.m
 |   └── synth
-|       └── pairwise
+|       └── eval_prop
 |           ├── run.m
-|           └── analysis.m
-|       └── train
-|           ├── train.m
-|           └── analysis1.m
-|       └── test
-|           ├── test.m
-|           └── analysis.m
-├── groundtruth
-|   ├── calib_result
-|   ├── include
-|   └── src
+|           └── evaluate.m
+|       └── eval_algo
+|           ├── run.m
+|           └── evaluate.m
+|       └── eval_interp
+|           ├── run.m
+|           └── evaluate.m
 └── README.md
 ```
 
-## Algorithms
+## Algorithms <a name="algorithms"></a>
 We have implemented four classes of algorithms, they are summarized in the table below
 
-| Class of Algo | Algo     | Summary  |
-| ------------- | -------- | ---------|
-| MVS           | PMVS  | patch based multi-view stereo |
-| PS            | EPS   | example-base photometric stereo |
-| PS            | LS-PS | least squares photometric stereo |
-| SL            | GSL   | Gray-code structured light |
-| VH            | VH    | visual hull |
+| Algo Class |  Algo  | Summary  | Source code |
+| :--------- | :----- | :------- | :---------- |
+| MVS        | PMVS   | Patch based Multi-View Stereo | [PMVS]() |
+| PS         | EPS    | Example-base Photometric Stereo | [PSKit](https://github.com/imkaywu/PSKit) |
+| PS         | LLS-PS | Least squares Photometric Stereo | [PSKit](https://github.com/imkaywu/PSKit) |
+| SL         | GSL    | Gray-coded Structured Light | [SLKit](https://github.com/imkaywu/SLKit) |
+| VH         | VH     | Volumetric Visual Hull | |
+
+## Calibration results <a name="calibration"></a>
+
+The format of calibration result can be found in the Documentation page.
 
 
-## Evaluation
-There are three metrics used
-* accuracy
-* completeness
-* angular error
 
-The `analysis.m` script in the corresponding directory can generate the final plot. Please to the `result` page for the plots of the results.
+## Datasets <a name="datasets"></a>
+
+## Execution & evaluation pipeline <a name="run_eval"></a>
 
 ## Data generation
 The blender projects and python scripts are [here](https://github.com/imkaywu/blender_scripts). The command is
