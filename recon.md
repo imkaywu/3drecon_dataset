@@ -5,7 +5,7 @@ permalink: /recon/
 ---
 
 ## Overview
-This page is dedicated to displaying the reconstruction results.
+This page show the reconstruction results of the synthetic and real-world datasets.
 
 ## Synthetic dataset
 We generate six synthetic objects with varied levels of texture, albedo, specularity, and roughness.
