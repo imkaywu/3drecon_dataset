@@ -18,7 +18,7 @@ Given a specific description, the proof-of-concept interpreter will select an al
 
 ## Datasets <a name="dataset"></a>
 
-We generate a dataset of four objects, see `Dataset` and `Recon` page. The mapping from problem conditions to algorithms are summarized in the table below. The reconstruction results of test objects and those of the baseline method are shown in the figure below. See the corresponding videos for mor details.
+We generate a dataset of four objects, see `Dataset` and `Recon` page. The mapping from problem conditions to algorithms are summarized in the table below. The reconstruction results of test objects and those of the baseline method are shown in the **Figure 1**. See the corresponding videos for mor details.
 
 | Class # | Object | Texture | Albedo | Specular | Rough | Mapping |
 | :------ | :----- | :------ | :----- | :------- | :---- | :-----: |
@@ -50,7 +50,7 @@ We generate a real-world dataset, see page `Dataset` and `Recon`. The mapping fr
 
 ## Evaluation 1: accurate description, successful result <a name="eval1"></a>
 
-In this section, we evaluate whether the interpreter can return a successful reconstruction result given a valid description of problem condition, see results in Figure 2. The figure is divided into two sections, one for synthetic dataset and another for real-world dataset. The ‘Algo’ row shows the algorithm selected by the interpreter. The ‘Results’ row shows the reconstruction results of the corresponding algorithm, and the ‘Baseline’ row demonstrate the results of the baseline method. We utilize visual phenomena, such as surface roughness, holes, spikes as indicators of the reconstruction quality.
+In this section, we evaluate whether the interpreter can return a successful reconstruction result given a valid description of problem condition, see results in **Figure 2**. The figure is divided into two sections, one for synthetic dataset and another for real-world dataset. The ‘Algo’ row shows the algorithm selected by the interpreter. The ‘Results’ row shows the reconstruction results of the corresponding algorithm, and the ‘Baseline’ row demonstrate the results of the baseline method. We utilize visual phenomena, such as surface roughness, holes, spikes as indicators of the reconstruction quality.
 
 The baseline method achieves decent reconstruction results on all objects. Though due to the resolution of the voxel grids, the surfaces are relatively rough. Further, the surface concavities fail to be carved out for concave objects (Bust). The performance of the interpreter on both synthetic and real-world datasets are consistent in that the algorithms selected by the interpreter consistently outperform the baseline technique. All results have much smoother reconstructed surfaces, especially those of EPS and GSL, which is an indicator that the accuracy of the results are much higher using the selected algorithm. Further, erroneous results, such as surface holes, obtrutions, spikes are absent from the reconstruction results, which indi- cates that the selected algorithms can achieve completeness, and angular error no worse than the baseline.
 
@@ -66,7 +66,7 @@ Note that the selection of objects do no favor any algorithm. In fact, as we wil
 	<img src="{{site.url}}{{site.baseurl}}/assets/results/eval1_real.png" style="border:none;">
 	<h6>Real-world data</h6>
 	</div>
-	<div class="thecap"><strong>Figure 2.</strong> Evaluation 1: correct description leads to successful reconstruc- tion result. The baseline results are provided so that we can determine the quality of result returned by the algorithm chosen by the interpreter.</div>
+	<div class="thecap"><strong>Figure 2.</strong> Evaluation 1: correct description leads to successful reconstruction result. The baseline results are provided so that we can determine the quality of result returned by the algorithm chosen by the interpreter.</div>
 </div>
 
 ## Evaluation 2: less accurate description, less successful results <a name="eval2"></a>
@@ -91,7 +91,7 @@ The reason is that there are multiple algorithms that could work successfully fo
 	<img src="{{site.url}}{{site.baseurl}}/assets/results/eval2_real.png" style="border:none;">
 	<h6>Real-world data</h6>
 	</div>
-	<div class="thecap"><strong>Figure 3.</strong> Evaluation 2: less accurate description may lead to poor recon- struction results. Desci represents inaccurate descriptions. For each object, the first row represent the description, with the correctly esti- mated property coloured in red while the incorrect ones in black. The algorithms determined by mapping are below the description with the algorithm selected by interpreter coloured in red (BL: baseline). The last row shows the corresponding reconstruction results.</div>
+	<div class="thecap"><strong>Figure 3.</strong> Evaluation 2: less accurate description may lead to poor reconstruction results. Desci represents inaccurate descriptions. For each object, the first row represent the description, with the correctly esti- mated property coloured in red while the incorrect ones in black. The algorithms determined by mapping are below the description with the algorithm selected by interpreter coloured in red (BL: baseline). The last row shows the corresponding reconstruction results.</div>
 </div>
 
 ## Evaluation 3: inaccurate description, poor reconstruction results <a name="eval3"></a>
@@ -99,7 +99,7 @@ We have demonstrated that given a less accurate description, the results may or 
 
 The figure is divided into two sections: one for inaccurate description and one for accurate description. The inaccurate description is property-wise opposite to the corresponding accurate description. The mapped algorithms are shown below the description, with the algorithm chosen by the interpreter coloured in red. The reconstruction result by the interpreted algorithm is shown as well.
 
-From the study of less accurate desription, we have already found out that it is still possible to achieve a successful result given an inaccurate description. However, it becomes more challenging, and more likely to select a less successful algorithm or the baseline method. There is a certain limit to the tolerance of inaccu- racy of property estimation. Thus, the take-away message is that the interpreter, in some cases, can still performs reliably given an inaccurate description. However, it becomes more likely to fail to achieve a successful result given an completely inaccurate description of problem condition.
+From the study of less accurate desription, we have already found out that it is still possible to achieve a successful result given an inaccurate description. However, it becomes more challenging, and more likely to select a less successful algorithm or the baseline method. There is a certain limit to the tolerance of inaccuracy of property estimation. Thus, the take-away message is that the interpreter, in some cases, can still performs reliably given an inaccurate description. However, it becomes more likely to fail to achieve a successful result given an completely inaccurate description of problem condition.
 
 <div class="container">
 	<div class="imgmul2">
@@ -114,9 +114,8 @@ From the study of less accurate desription, we have already found out that it is
 	<div class="thecap"><strong>Figure 4.</strong> Evaluation 3: inaccurate description may lead to poor result. For each description, the first row represent the settins of properties. The algorithms determined by mapping are shown below with the algorithm selected by interpreter coloured in red (BL: baseline). The last row shows the corresponding reconstruction results. We can see that the results of inaccurate descriptions are poorer then those of accurate descriptions.</div>
 </div>
 
-
 ## Summary <a name="conclusion"></a>
-This chapter, we proposed a proof of concept interpreter, and provide demonstrative results of the performance of the interpreter. We are interested to see if the interpreter is able to handle conditions where accurate or inaccurate descriptions are provided. The findings can be further summarized into one graph, as shown in Figure~\ref{fig:real_synth_results}.
+This chapter, we proposed a proof of concept interpreter, and provide demonstrative results of the performance of the interpreter. We are interested to see if the interpreter is able to handle conditions where accurate or inaccurate descriptions are provided. The findings can be further summarized into one graph, as shown in **Figure 5**.
 
 <div class="container">
 	<div class="imgmul2">

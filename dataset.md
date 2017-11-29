@@ -4,8 +4,6 @@ title: Datasets
 permalink: /dataset/
 ---
 
-The datasets provided here are for non-commercial research/educational use only.
-
 ## Real-world dataset
 <div class="container">
 	<div class="imgmul3">
@@ -151,6 +149,8 @@ The datasets provided here are for non-commercial research/educational use only.
 	</div>
 
 </div>
+
+**The datasets provided here are for non-commercial research/educational use only.**
 
 [Download synthetic projects](https://github.com/imkaywu/blender_scripts)
 
