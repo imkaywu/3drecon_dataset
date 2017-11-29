@@ -2,4 +2,9 @@
 
 This is the dataset created for my Master's thesis: Development and Evaluation of 3D Reconstruction Framework for General Objects.
 
-![sample image](assets/sample_img.png)
+<div align="center">
+<img src="assets/dataset/statue_mvs.jpg" height="250px">
+<img src="assets/dataset/statue_ps.png" height="250px">
+<img src="assets/dataset/statue_sl.bmp" height="250px">
+
+</div>
