@@ -59,7 +59,6 @@ The structure of the toolbox is as follows:
 	| PS         | LLS-PS | Least squares Photometric Stereo | [PSKit](https://github.com/imkaywu/PSKit) |
 	| SL         | GSL    | Gray-coded Structured Light | [SLKit](https://github.com/imkaywu/SLKit) |
 	| VH         | VH     | Volumetric Visual Hull | |
-	{:.mbtablestyle}
 
 * The `eval` directory contains the evaluation pipelines for different stages discussed in [Results](/3drecon_dataset/result/) page
 
@@ -282,4 +281,4 @@ blender proj/mvs.blend -b -P scripts/pairwise/mvs.py
 ``` -->
 
 ## License
-See the file `./License.md'
+See the file `./License.md`.
